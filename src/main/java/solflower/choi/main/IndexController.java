@@ -30,7 +30,7 @@ public class IndexController {
 	}
 	
 
-	@RequestMapping(value = "/solyi")
+	@RequestMapping(value = "/sol")
 	public String solyi() {
 		return "portfolio/solyi";
 		
