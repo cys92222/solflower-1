@@ -7,7 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+<<<<<<< HEAD
         <title>CHOI SOLYI -PORTFOLIO</title>
+=======
+        <title>Resume - Start Bootstrap Theme</title>
+>>>>>>> branch 'master' of https://github.com/choi-solyi/solflower.git
         <link rel="icon" type="image/x-icon" href="/static/assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
