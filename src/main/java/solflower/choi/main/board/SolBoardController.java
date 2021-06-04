@@ -1,4 +1,4 @@
-package solflower.choi.main;
+package solflower.choi.main.board;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
