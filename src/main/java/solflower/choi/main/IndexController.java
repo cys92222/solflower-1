@@ -8,6 +8,7 @@ public class IndexController {
 
 	@RequestMapping(value = "/index")
 	public String index() {
+		System.out.println("aaa");
 		return "index";
 	}
 	
@@ -25,6 +26,13 @@ public class IndexController {
 	@RequestMapping(value = "/index4")
 	public String index4() {
 		return "index4";
+		
+	}
+	
+
+	@RequestMapping(value = "/solyi")
+	public String solyi() {
+		return "portfolio/solyi";
 		
 	}
 	
