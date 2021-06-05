@@ -36,5 +36,11 @@ public class IndexController {
 		
 	}
 	
+	@RequestMapping(value = "/youngsoo")
+	public String youngsoo() {
+		return "portfolio/youngsoo";
+		
+	}
+	
 	
 }
