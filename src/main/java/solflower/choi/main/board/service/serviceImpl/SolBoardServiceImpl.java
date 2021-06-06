@@ -6,6 +6,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import solflower.choi.main.SolBoardVo;
 import solflower.choi.main.board.mapper.SolBoardMapper;
 import solflower.choi.main.board.service.SolBoardService;
 
@@ -16,10 +17,13 @@ public class SolBoardServiceImpl implements SolBoardService {
 	SolBoardMapper solBoardMapper;
 
 	@Override
-	public List<String> findList() {
-		// TODO Auto-generated method stub
-		System.out.println("serviceImpl");
+	public List<Map> findList() {
 		return solBoardMapper.findList();
+	}
+
+	@Override
+	public List<Map> findCategory() {
+		return solBoardMapper.categoryList();
 	}
 
 
