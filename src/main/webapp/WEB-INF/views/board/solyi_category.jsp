@@ -6,6 +6,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<script>
+
+</script>
 </head>
 <body>
 
@@ -14,26 +17,21 @@ SOLYI BOARD PAGE
 <table>
 	<thead>
 		<tr>
-			<th>글 번호</th>	
-			<th>제목</th>	
-			<th>내용</th>	
-			<th>작성자</th>	
-			<th>작성일자</th>	
+			<th>카테고리 코드</th>	
+			<th>카테고리 이름</th>	
 		</tr>
 	</thead>
 	<tbody>
-		<c:forEach  var="a" items="${list}">
+		<c:forEach  var="a" items="${categoryList}">
 			<tr>
-				<td>${a.BOARD_NO }</td>
-				<td>${a.TITLE }</td>
-				<td>${a.CONTENT }</td>
-				<td>${a.NAME }</td>
-				<td>${a.CREATE_DATE}</td>
+				<td>${a.CATEGORY_CODE }</td>
+				<td>${a.CATEGORY_NAME}</td>
 			<tr>
 		</c:forEach>
 	</tbody>
-
 </table>
+<input type=button value="글쓰기" OnClick="window.location='/sol/addCategory'"></td>
+
 </div>
 </body>
 </html>

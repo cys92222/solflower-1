@@ -6,34 +6,26 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<script>
+
+</script>
 </head>
 <body>
 
 SOLYI BOARD PAGE
 <div>
-<table>
-	<thead>
-		<tr>
-			<th>글 번호</th>	
-			<th>제목</th>	
-			<th>내용</th>	
-			<th>작성자</th>	
-			<th>작성일자</th>	
-		</tr>
-	</thead>
-	<tbody>
-		<c:forEach  var="a" items="${list}">
-			<tr>
-				<td>${a.BOARD_NO }</td>
-				<td>${a.TITLE }</td>
-				<td>${a.CONTENT }</td>
-				<td>${a.NAME }</td>
-				<td>${a.CREATE_DATE}</td>
-			<tr>
-		</c:forEach>
-	</tbody>
 
-</table>
+<form>
+	
+	<label for="category_code">코드</label>
+	<input name="코드" id="category_code">
+	
+	<label for="category_name">이름</label>
+	
+	<input name="이름" id="category_code">
+	
+	<input type="submit">
+</form>
 </div>
 </body>
 </html>
