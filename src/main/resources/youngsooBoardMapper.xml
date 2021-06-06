@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="solflower.choi.main.board.mapper.YoungsoBoardMapper">
+
+	<select id="findBoardList" resultType="Map">
+		SELECT 
+			BOARD_NO,
+			USER_NO,
+			CATEGORY_CODE,
+			TITLE,
+			CONTENT,
+			CREATE_DATE,
+			MODIFY_DATE,
+			DELETE_AT,
+			HITS,
+			REPORT,
+			RECOMMEND
+		FROM YOUNGSOO_BOARD
+	</select>
+	
+</mapper>
