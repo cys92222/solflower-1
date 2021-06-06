@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import solflower.choi.main.SolBoardVo;
 import solflower.choi.main.board.service.SolBoardService;
 
 
