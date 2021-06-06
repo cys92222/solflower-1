@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="solflower.choi.main.board.mapper.YoungsoBoardMapper">
+<mapper namespace="solflower.choi.main.mapper.board.YoungsooBoardMapper">
 
 	<select id="findBoardList" resultType="Map">
 		SELECT 

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import solflower.choi.main.board.service.YoungsooBoardService;
 
 @Controller
-public class YoungsoBoardController {
+public class YoungsooBoardController {
 
 	@Autowired
 	YoungsooBoardService ybs;
@@ -16,7 +16,8 @@ public class YoungsoBoardController {
 	@RequestMapping("/youngsooBoardList")
 	public String findBoardList(Model model) {
 		System.out.println("컨트롤러@@@@@@@@@@@@@@");
+		System.out.println(ybs.findBoardList());
 		model.addAttribute("boardList", ybs.findBoardList());
-		return "/board/youngsoBoardList";
+		return "/board/youngsooBoardList";
 	}
 }

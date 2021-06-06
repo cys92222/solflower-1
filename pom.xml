@@ -49,11 +49,18 @@
 			<scope>runtime</scope>
 		</dependency>
 		<!-- HikariCP connection pool -->
-<dependency>
-<groupId>com.zaxxer</groupId>
-<artifactId>HikariCP</artifactId>
-<version>3.2.0</version>
-</dependency>
+		<dependency>
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			<version>3.2.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>1.2</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>

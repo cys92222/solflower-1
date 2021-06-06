@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @Configuration
-@MapperScan(basePackages = "solflower.choi.main.board.mapper")
+@MapperScan(basePackages = "solflower.choi.main.mapper.*")
 public class DataAccesccConfig {
 	//기존 매니저 클래스를 대신하는 클래스
 	@Bean
@@ -22,7 +22,7 @@ public class DataAccesccConfig {
 		
 		sessionFactory.setDataSource(dataSource);
 		sessionFactory.setMapperLocations(
-				new PathMatchingResourcePatternResolver().getResources("classpath:/mapper/*.xml")
+				new PathMatchingResourcePatternResolver().getResources("classpath:/mapper/*/*.xml")
 		);
 		return sessionFactory.getObject();
 	}

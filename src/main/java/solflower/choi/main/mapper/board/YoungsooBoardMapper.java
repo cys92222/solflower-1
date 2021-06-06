@@ -1,4 +1,4 @@
-package solflower.choi.main.board.mapper;
+package solflower.choi.main.mapper.board;
 
 import java.util.List;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
-public interface YoungsoBoardMapper {
+public interface YoungsooBoardMapper {
 	
 	List<Map> findBoardList();
 }
