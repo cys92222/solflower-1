@@ -10,4 +10,6 @@ public interface SolBoardService {
 
 	public List<Map> findCategory();
 
+	public void insertCategory(Map insertCategory);
+
 }

@@ -12,7 +12,7 @@
 </head>
 <body>
 
-SOLYI BOARD PAGE
+카테고리 목록
 <div>
 <table>
 	<thead>
@@ -22,16 +22,16 @@ SOLYI BOARD PAGE
 		</tr>
 	</thead>
 	<tbody>
-		<c:forEach  var="a" items="${categoryList}">
+		<c:forEach  var="item" items="${categoryList}">
 			<tr>
-				<td>${a.CATEGORY_CODE }</td>
-				<td>${a.CATEGORY_NAME}</td>
+				<td>${item.CATEGORY_CODE}</td>
+				<td>${item.CATEGORY_NAME}</td>
 			<tr>
 		</c:forEach>
 	</tbody>
 </table>
-<input type=button value="글쓰기" OnClick="window.location='/sol/addCategory'"></td>
-
+<input type=button value="카테고리 추가" OnClick="window.location='/sol/addCategory'"></td>
+<!-- 추후 jquery 로 변경 -->
 </div>
 </body>
 </html>

@@ -9,7 +9,7 @@
 </head>
 <body>
 
-SOLYI BOARD PAGE
+솔이 게시판
 <div>
 <table>
 	<thead>

@@ -12,18 +12,16 @@
 </head>
 <body>
 
-SOLYI BOARD PAGE
+
+카테고리 추가 페이지
 <div>
 
-<form>
+<form method="post" action="/sol/insertCategory" name="insertCategory">
 	
-	<label for="category_code">코드</label>
-	<input name="코드" id="category_code">
-	
+	<label for="category_code">코드명</label>
+	<input name="category_code" id="category_code">
 	<label for="category_name">이름</label>
-	
-	<input name="이름" id="category_code">
-	
+	<input name="category_name" id="category_code">
 	<input type="submit">
 </form>
 </div>

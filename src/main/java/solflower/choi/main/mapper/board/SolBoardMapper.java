@@ -13,4 +13,6 @@ public interface SolBoardMapper {
 	List<Map> findList();
 	
 	List<Map> categoryList();
+
+	void insertCategory(Map insertCategory);
 }

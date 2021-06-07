@@ -26,7 +26,10 @@ public class SolBoardServiceImpl implements SolBoardService {
 		return solBoardMapper.categoryList();
 	}
 
-
+	@Override
+	public void insertCategory(Map insertCategory) {
+		solBoardMapper.insertCategory(insertCategory);
+	}
 	
 	
 }

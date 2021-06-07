@@ -29,5 +29,11 @@
 		  FROM SOLYI_BOARD_CATEGORY
 	</select>
 
+	<insert id="insertCategory" parameterType="java.util.Map">
+		INSERT INTO SOLYI_BOARD_CATEGORY(category_code, category_name)
+		 VALUES ( #{category_code}
+		  		 ,#{category_name}
+		        )
+	</insert>
 
 </mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="solflower.choi.main.mapper.board.UserMapper">
+
+	<select id="login" resultType="int">
+<!-- 	로그인 -->
+		SELECT 
+			COUNT(*) AS CNT
+		FROM T_USER
+		WHERE USER_ID = #{USER_ID} AND USER_PW = #{USER_PW}
+	</select>
+
+	<select id="getUserNo" resultType="int">
+<!-- 	로그인 성공후 USER_NO 설정을 위한 -->
+		SELECT 
+			USER_NO
+		FROM T_USER
+		WHERE USER_ID = #{USER_ID} AND USER_PW = #{USER_PW}
+	</select>
+	
+</mapper>	
