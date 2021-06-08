@@ -2,15 +2,22 @@ package solflower.choi.main;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class IndexController {
 
-	@RequestMapping(value = "/index")
-	public String index() {
-		System.out.println("aaa");
-		return "index";
-	}
+//	@RequestMapping(value = "/index")
+//	public String index() {
+//		System.out.println("aaa");
+//		return "index";
+//	}
+	
+	@RequestMapping("/")
+    public String index() {
+//		return "board/youngsooBoardList";
+        return "main/index";
+    }
 	
 
 	@RequestMapping(value = "/index2")
