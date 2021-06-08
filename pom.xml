@@ -58,19 +58,12 @@
 		<dependency>
 		    <groupId>javax.servlet</groupId>
 		    <artifactId>jstl</artifactId>
-<<<<<<< HEAD
 		</dependency>
 		<dependency>
 	      <groupId>org.apache.tiles</groupId>
 	      <artifactId>tiles-jsp</artifactId>
 	      <version>3.0.7</version>
 	 	</dependency>
-=======
-			<groupId>org.apache.tiles</groupId>
-			<artifactId>tiles-jsp</artifactId>
-			<version>3.0.7</version>
-		</dependency>
->>>>>>> branch 'master' of https://github.com/choi-solyi/solflower.git
 	</dependencies>
 
 	<build>
