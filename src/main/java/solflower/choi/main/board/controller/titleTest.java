@@ -14,8 +14,8 @@ public class titleTest {
 
         ModelAndView mv = new ModelAndView();
         
-//        mv.setViewName("main/index");
-        mv.setViewName("board/youngsooBoardList");
+        mv.setViewName("main/index");
+//        mv.setViewName("board/youngsooBoardList");
         return mv;
     }
 }
