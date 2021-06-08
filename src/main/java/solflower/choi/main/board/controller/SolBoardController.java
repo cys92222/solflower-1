@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import solflower.choi.main.SolBoardVo;
 import solflower.choi.main.board.service.SolBoardService;
@@ -28,7 +29,6 @@ public class SolBoardController {
 		return "/board/solyi_board";
 	}
 	
-
 	@RequestMapping(value = "/sol/category")
 	public String findCategory(Model m) {
 		List<Map> categoryList = solBoardService.findCategory();
@@ -47,5 +47,4 @@ public class SolBoardController {
 		solBoardService.insertCategory(insertCategory);
 		return "/board/solyi_category";
 	}
-	
 }
