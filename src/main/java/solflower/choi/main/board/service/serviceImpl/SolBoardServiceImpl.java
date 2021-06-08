@@ -6,7 +6,6 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import solflower.choi.main.SolBoardVo;
 import solflower.choi.main.board.service.SolBoardService;
 import solflower.choi.main.mapper.board.SolBoardMapper;
 

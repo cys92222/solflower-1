@@ -30,7 +30,7 @@
 		</c:forEach>
 	</tbody>
 </table>
-<input type=button value="카테고리 추가" OnClick="window.location='/sol/addCategory'"></td>
+<input type=button value="카테고리 추가" OnClick="window.location='/sol/addCategory'">
 <!-- 추후 jquery 로 변경 -->
 </div>
 </body>
