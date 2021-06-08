@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,11 +22,14 @@ function list_btn_click(){
 <title>게시물 등록</title>
 </head>
 <body>
+<c:set var="USER_ID" value="${session.USER_ID }"/>
+<c:set var="USER_NO" value="${session.USER_NO }"/>
 	<form action="/youngsooBoardAdd" method="get" id="add_form" >
 		<label for="TITLE">제목</label>
 		<input type="text" id="TITLE" name="TITLE" required="required"><br>
-		<label for="USER_NO">작성자</label>
-		<input type="text" id="USER_NO" name="USER_NO" readonly="readonly"><br>
+		<label for="SHOW_USER_ID">작성자</label>
+		<input type="text" id="SHOW_USER_ID" value='<c:out value="${USER_ID }"/>' readonly="readonly"><br>
+		<input type="text" name="USER_NO" value='<c:out value="${USER_NO }"/>' readonly="readonly">
 		<select name="CATEGORY_CODE"  required="required">
 			<option value="F_01">자유게시판</option>
 			<option value="F_02">질문게시판</option>
