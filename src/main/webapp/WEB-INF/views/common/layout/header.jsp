@@ -10,17 +10,17 @@
 	<noscript><link rel="stylesheet" href="/static/css/mainPage/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
-<!-- Wrapper -->
-<div id="wrapper">
 
 	<!-- Header -->
-		<header id="header" class="alt">
-			<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
-			<nav>
-				<a href="#menu">Menu</a>
-			</nav>
-		</header>
+	<header id="header" class="alt">
+		<a href="/" class="logo"><strong>SolFlower</strong> <span>솔플라워</span></a>
+		<nav>
+			<a href="#menu">메뉴</a>
+		</nav>
+	</header>
 
+<!-- Wrapper -->
+<div id="wrapper">
 	<!-- Menu -->
 		<nav id="menu">
 			<ul class="links">

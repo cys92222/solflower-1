@@ -1,6 +1,7 @@
 package solflower.choi.main;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -15,7 +16,6 @@ public class IndexController {
 	
 	@RequestMapping("/")
     public String index() {
-//		return "board/youngsooBoardList";
         return "main/index";
     }
 	

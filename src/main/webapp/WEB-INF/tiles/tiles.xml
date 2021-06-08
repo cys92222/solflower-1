@@ -22,4 +22,7 @@
 	<definition name="board/*" extends="main-layout">
        <put-attribute name="body" value="/WEB-INF/views/main/body/{1}.jsp" />
    </definition>
+	<definition name="portfolio/*" extends="main-layout">
+       <put-attribute name="body" value="/WEB-INF/views/portfolio/{1}.jsp" />
+   </definition>
 </tiles-definitions>
